@@ -47,5 +47,8 @@
         "command": "docker build -f apps/nest_microservices/Dockerfile . -t @nest-microservices/nest_microservices"
       }
     }
+  },
+  "dependencies": {
+    "@nest-microservices/nest_microservices": "file:"
   }
 }
