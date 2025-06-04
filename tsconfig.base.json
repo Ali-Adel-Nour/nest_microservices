@@ -5,6 +5,7 @@
     "emitDeclarationOnly": true,
     "importHelpers": true,
     "isolatedModules": true,
+    "experimentalDecorators": true,
     "lib": ["es2022"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
@@ -14,8 +15,13 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "target": "es2022",
-    "customConditions": ["development"]
+    "customConditions": ["development"],
+    "baseUrl": ".",
+    "paths": {
+      "@nest-microservices/*": ["apps/*"],
+      "@nest-microservices/nestjs/*": ["libs/nestjs/src/lib/*"]
+    }
   }
 }
